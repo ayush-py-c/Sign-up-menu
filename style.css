@@ -1,0 +1,60 @@
+.gradient-background{
+    background: linear-gradient(300deg,black,rgb(2, 2, 2),rgb(0, 128, 0));
+    background-size: 180%,180%;
+    animation:gradient-animation 3s ease-in-out;
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 530%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 520%;
+    }
+  }
+.glow{
+    
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #52e363, 0 0 40px #39dd73, 0 0 50px #37d752, 0 0 60px #26e67c, 0 0 70px #34d05b;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #2ce955, 0 0 40px #05880c, 0 0 50px #11ad23, 0 0 60px #089c0f, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.bc{
+    /* position: absolute; */
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    /* width: 40px; */
+    /* height: 40px; */
+    /* border-radius: 50%; */
+    background-color: #fff;
+    box-shadow:
+      0 0 1px 1px #fff,
+      0 0 .5px .5px #fff,
+      0 0 .5px 1.5px #fff;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: green!important;
+  }
+  
+  .custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 255, 0, 0.25)
+  }
+  .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25)
+  }
+  .custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+    background-color: #C8FFC8; 
+  }
